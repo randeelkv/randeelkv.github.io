@@ -1,0 +1,30 @@
+<mvc:View
+    controllerName="root.rootproject.controller.MainView"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+>
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>title}">
+                    <content>
+                    <l:VerticalLayout class="sapUiContentPadding" width="100%"> 
+                    <MessageStrip text="The following are the applications of the input types. ui5 input are deined under sap.m.InputType Enumerater." type="Information">
+                    
+                        <Link text="sap.m.InputType" target="_blank" href="https://sapui5.hana.ondemand.com/#/api/sap.m.InputType%23overview" /> 
+                    
+                    </MessageStrip>
+                        <Label text="Text" labelFor="inName"/>
+                        <Input id="inName" ></Input>
+                        
+                        <Label text="Email : you can only see a different in the keyboard layout in mobile devices" labelFor="inEmail"/>
+                        <Input id="inEmail" ></Input>
+                    </l:VerticalLayout>
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
